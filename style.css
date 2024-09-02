@@ -11,7 +11,7 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
-    height: fit-content;
+    height: 100%;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -88,4 +88,36 @@ button:hover {
 }
 
 
+/* For mobile devices (Portrait) */
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 50%;
+        padding: 10px;
+        margin: auto;
+        margin-top: 10vw;
+    }
+    h2{
+        font-size: 4vw;
+    }
+    p {
+        font-size: 2vw;
+    }
+    button{
+        width: 40vw;
+        height: 5vh;
+        font-size: 3vw;
+        margin: 1.5vw;
+    }
+    span{
+        font-size: 3vw;
+    }
+    .link {
+        font-size: 16px;
+        padding: 10px;
+    }
+    h1{
+        font-size: 5vw;
+        margin-top: 15vw;
+    }
+}
 
