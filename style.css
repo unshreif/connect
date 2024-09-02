@@ -91,10 +91,13 @@ button:hover {
 /* For mobile devices (Portrait) */
 @media only screen and (max-width: 480px) {
     .container {
-        width: 50%;
+        width: 80%;
         padding: 10px;
         margin: auto;
         margin-top: 10vw;
+    }
+    body{
+        height: 100%;
     }
     h2{
         font-size: 4vw;
@@ -120,4 +123,18 @@ button:hover {
         margin-top: 15vw;
     }
 }
+
+/* Tablets: Larger screens (768px - 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 85%;
+        padding: 20px;
+    }
+
+    .link {
+        font-size: 18px;
+        padding: 16px;
+    }
+}
+
 
