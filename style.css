@@ -19,6 +19,7 @@ h1{
     text-align: center;
     margin-top: 20px;
     font-weight: 100;
+    font-size: 4vw;
 
 }
 .container{
@@ -27,10 +28,12 @@ h1{
     text-align: center;
     justify-content: center;
     width: 40%;
+    margin: 0 auto;
     margin-top: 9vw;
     margin-left: 30vw;
     height: fit-content;
     border-radius: 2vw;
+    min-width:30vw ;
 }
 img{
     width: 15vw;
@@ -58,7 +61,8 @@ button{
     margin: 0.5vw;
     background: #7a7ff4;
     color: white;
-    font-size: 1vw;
+    font-size: 2vw;
+    min-width: 30vw;
     font-family: "SUSE", sans-serif;
 }
 footer{
@@ -83,41 +87,4 @@ button:hover {
     cursor: pointer;
     font-weight: bolder;
     background-color: #1900a8;
-}
-
-
-/* For mobile devices (Portrait) */
-@media only screen and (max-width: 480px) {
-    .container {
-        width: 80%;
-        padding: 10px;
-        margin: auto;
-        margin-top: 10vw;
-    }
-    body{
-        height: 100%;
-    }
-    h2{
-        font-size: 4vw;
-    }
-    p {
-        font-size: 2vw;
-    }
-    button{
-        width: 40vw;
-        height: 5vh;
-        font-size: 3vw;
-        margin: 1.5vw;
-    }
-    span{
-        font-size: 3vw;
-    }
-    .link {
-        font-size: 16px;
-        padding: 10px;
-    }
-    h1{
-        font-size: 5vw;
-        margin-top: 15vw;
-    }
 }
