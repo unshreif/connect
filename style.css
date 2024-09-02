@@ -1,0 +1,91 @@
+@import url('https://fonts.cdnfonts.com/css/blockletter');
+@import url('https://fonts.cdnfonts.com/css/azonix');
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+@font-face {
+    font-family: "galaksinos";
+    src: url('galaksinos-rpole.ttf');
+}
+body{
+    background: linear-gradient(#06002A,#100069,#1900a8);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 100;
+
+}
+.container{
+    background: white;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 40%;
+    margin-top: 9vw;
+    margin-left: 30vw;
+    height: fit-content;
+    border-radius: 2vw;
+}
+img{
+    width: 15vw;
+    border-radius: 50%;
+    margin-top: -6vw;
+    border: 3px solid white;
+}
+h2{
+    font-size: 2vw;
+    font-family: 'Azonix', sans-serif;
+}
+p{
+    font-size: 1vw;
+    margin-top: -1vw;
+    font-family: 'Azonix', sans-serif;
+}
+.buttons{
+    line-height: 2vw;
+}
+button{
+    width: 20vw;
+    height: 6vh;
+    border-radius: 3vw;
+    border: none;
+    margin: 0.5vw;
+    background: #7a7ff4;
+    color: white;
+    font-size: 1vw;
+    font-family: "SUSE", sans-serif;
+}
+footer{
+    margin-top: 2vw;
+    color: white;
+}
+footer h2 {
+    font-family: "galaksinos";
+    font-weight: lighter;
+    font-size: 3vw;
+}
+footer p{
+    font-size: 10px;
+}
+span{
+    font-size: 1vw;
+    font-family: 'Azonix', sans-serif;
+}
+button:hover {
+    box-shadow: 3px 3px #100069;
+    transition: .3s;
+    cursor: pointer;
+    font-weight: bolder;
+    background-color: #1900a8;
+}
+
+
+
