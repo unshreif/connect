@@ -6,7 +6,7 @@
     src: url('galaksinos-rpole.ttf');
 }
 body{
-    background: linear-gradient(#06002A,#100069,#1900a8);
+    background: radial-gradient(#000000,#0012ff);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -28,6 +28,7 @@ h1{
     text-align: center;
     justify-content: center;
     width: 40%;
+    height: 100%;
     margin: 0 auto;
     margin-top: 9vw;
     margin-left: 30vw;
@@ -88,3 +89,42 @@ button:hover {
     font-weight: bolder;
     background-color: #1900a8;
 }
+
+@media (max-width: 480px) {
+    .container{
+        width: 80vw;
+        margin-left: auto;
+        margin-top: 18vw;
+    }
+    button {
+        width: 60vw;
+        height: 10vw;
+        font-size: 5vw;
+        border-radius: 9vw;
+    }
+    .buttons{
+        line-height: 12vw;
+    }
+   .card h2{
+        font-size: 7vw;
+    }
+   .card p{
+       font-size: 3vw;
+   }
+   footer h2{
+         font-size: 8vw;
+   }
+   footer p{
+       font-size: 4vw;
+   }
+   footer p > span{
+       font-size: 3vw;
+   }
+
+}
+
+
+
+
+
+
