@@ -120,6 +120,10 @@ button:hover {
    footer p > span{
        font-size: 3vw;
    }
+    img{
+         width: 30vw;
+       margin-top: -15vw;
+   }
 
 }
 
