@@ -3,7 +3,7 @@ let insta = location.url = 'https://www.instagram.com/unshreif';
 let linked = location.url = 'https://www.linkedin.com/in/unshreif';
 let x = location.url = 'https://x.com/unshreif';
 let github = location.url = 'https://github.com/unshreif';
-let saraha = location.url = 'https://saraha.com/unshreif';
+let saraha = location.url = 'https://sarhne.sarahah.pro/unshreif';
 let mail = location.url = 'mailto:unshreif@gmail.com';
 
 document.getElementById('FaceBook').addEventListener('click', function() {
