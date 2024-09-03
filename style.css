@@ -19,7 +19,7 @@ h1{
     text-align: center;
     margin-top: 20px;
     font-weight: 100;
-    font-size: 4vw;
+    font-size: 2vw;
 
 }
 .container{
@@ -27,14 +27,15 @@ h1{
     align-items: center;
     text-align: center;
     justify-content: center;
-    width: 40%;
+    width: 30%;
     height: 100%;
     margin: 0 auto;
     margin-top: 9vw;
     margin-left: 30vw;
     height: fit-content;
     border-radius: 2vw;
-    min-width:30vw ;
+    margin: auto;
+    margin-top: 10vw;
 }
 img{
     width: 15vw;
@@ -62,8 +63,7 @@ button{
     margin: 0.5vw;
     background: #7a7ff4;
     color: white;
-    font-size: 2vw;
-    min-width: 30vw;
+    font-size: 1vw;
     font-family: "SUSE", sans-serif;
 }
 footer{
@@ -83,7 +83,7 @@ span{
     font-family: 'Azonix', sans-serif;
 }
 button:hover {
-    box-shadow: 3px 3px #100069;
+    box-shadow: 3px 3px #0012ff;
     transition: .3s;
     cursor: pointer;
     font-weight: bolder;
@@ -94,8 +94,9 @@ button:hover {
     .container{
         width: 80vw;
         margin-left: auto;
-        margin-top: 18vw;
+        margin-top: 30vw;
     }
+    h1{font-size: 5vw;}
     button {
         width: 60vw;
         height: 10vw;
@@ -120,12 +121,14 @@ button:hover {
    footer p > span{
        font-size: 3vw;
    }
-    img{
+   img{
          width: 30vw;
        margin-top: -15vw;
    }
 
 }
+
+
 
 
 
