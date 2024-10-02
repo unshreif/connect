@@ -5,6 +5,7 @@ let x = location.url = 'https://x.com/unshreif';
 let github = location.url = 'https://github.com/unshreif';
 let saraha = location.url = 'https://sarhne.sarahah.pro/unshreif';
 let mail = location.url = 'mailto:unshreif@gmail.com';
+let tele = location.url = 'https://t.me/unshreif';
 
 document.getElementById('FaceBook').addEventListener('click', function() {
     window.open(face);
@@ -21,8 +22,8 @@ document.getElementById('X').addEventListener('click', function() {
 document.getElementById('github').addEventListener('click', function() {
     window.open(github);
 });
-document.getElementById('sarahah').addEventListener('click', function() {
-    window.open(saraha);
+document.getElementById('telegram').addEventListener('click', function() {
+    window.open(tele);
 });
 document.getElementById('mail').addEventListener('click', function() {
     window.open(mail);
