@@ -38,8 +38,8 @@ h1{
     margin-top: 10vw;
 }
 img{
-    width: 15vw;
     border-radius: 50%;
+    width: 12vw;
     margin-top: -6vw;
     border: 3px solid white;
 }
@@ -106,29 +106,27 @@ button:hover {
     .buttons{
         line-height: 12vw;
     }
-   .card h2{
+    .card h2{
         font-size: 7vw;
     }
-   .card p{
-       font-size: 3vw;
-   }
-   footer h2{
-         font-size: 8vw;
-   }
-   footer p{
-       font-size: 4vw;
-   }
-   footer p > span{
-       font-size: 2vw;
-   }
-   img{
-         width: 30vw;
-       margin-top: -15vw;
-   }
+    .card p{
+        font-size: 3vw;
+    }
+    footer h2{
+        font-size: 8vw;
+    }
+    footer p{
+        font-size: 4vw;
+    }
+    footer p > span{
+        font-size: 2vw;
+    }
+    img{
+        width: 30vw;
+        margin-top: -15vw;
+    }
 
 }
-
-
 
 
 
