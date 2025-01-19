@@ -29,6 +29,6 @@ document.getElementById('telegram').addEventListener('click', function() {
 document.getElementById('mail').addEventListener('click', function() {
     window.open(mail);
 });
-document.getElementById('website').addEventListener('click', function() {
+document.getElementById('site').addEventListener('click', function() {
     window.open(web);
 });
