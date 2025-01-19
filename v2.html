@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect with Muhmd Samy</title>
+    <link rel="icon" href="./FV.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+  <style>
+    @font-face {
+    font-family: 'galax';
+    src: url('galaksinos-rpole.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #101010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#loading .spinner {
+    width: 60px;
+    aspect-ratio: 4;
+    --c:white 90%,#0000;
+    background:
+            radial-gradient(circle closest-side at left  6px top 50%,var(--c)),
+            radial-gradient(circle closest-side                     ,var(--c)),
+            radial-gradient(circle closest-side at right 6px top 50%,var(--c));
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    animation: l4 1s infinite alternate;
+}
+@keyframes l4 {
+    to{width:25px;aspect-ratio: 1}
+}
+body {
+    background-color:#101010;
+    color: white;
+}
+
+.navbar {
+    background-color: #101010;
+    margin-top: 2vw;
+}
+.navbar a:hover{
+    color: white !important;
+}
+.navbar-brand, .nav-link {
+    color: white;
+}
+
+.btn-primary {
+    background-color:#495867;
+    color: white;
+    border-color: #495867;
+}
+
+.btn-primary:hover {
+    background-color: #495867;
+    border-color: #495867;
+    color: white;
+}
+
+.btn-outline-primary {
+    color: #495867;
+    border-color: #495867;
+}
+
+.btn-outline-primary:hover {
+    background-color: #495867;
+    color: white;
+    border-color: #495867;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+
+.btn-outline-light {
+    color: #495867;
+    border-color: #495867;
+}
+
+.btn-outline-light:hover {
+    background-color: #495867;
+    color: #fff;
+    border-color: #495867;
+}
+
+#aboutSection.collapse:not(.show),
+#contactSection.collapse:not(.show) {
+    display: none;
+}
+
+#contactSection.collapse.show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #101010;
+    z-index: 1000;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutSection.collapse.show ~ *,
+#contactSection.collapse.show ~ * {
+    display: none;
+}
+p{
+    color: white;
+    font-family: 'Galax', sans-serif;
+}
+h1{
+    color: white;
+    font-family: "Arabic Typesetting";
+    font-weight: 100;
+}
+  </style>
+<body>
+<div id="loading">
+    <div class="spinner"></div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top justify-content-center">
+    <a class="navbar-brand" href="https://muhmdsamy.me">Muhmd<b>Samy</b></a>
+</nav>
+
+<section id="home" class="vh-100 d-flex align-items-center">
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <img src="./FV.png" alt="Muhmd Samy" class="rounded-circle mb-4 animate__animated animate__fadeInDown" width="150" height="150">
+                <h1 class="display-4 fw-bold animate__animated animate__fadeIn">Muhmd Samy</h1>
+                <p class="lead text-muted animate__animated animate__fadeInUp" style="color: white">Hello stranger, let's be friends.</p>
+                <div class="mt-4 animate__animated animate__fadeInUp">
+                    <a href="https://www.muhmdsamy.me" class="btn btn-primary btn-lg me-2" data-bs-toggle="collapse" data-bs-target="https://www.muhmdsamy.me">Learn More</a>
+                    <a href="#contact" class="btn btn-outline-primary btn-lg" data-bs-toggle="collapse" data-bs-target="#contactSection">Social Media</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contactSection" class="collapse">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h2 class="fw-bold mb-4 animate__animated">Connect with Me</h2>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="https://facebook.com/unshreif" class="btn btn-outline-light btn-lg animate__animated">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com/unshreif" class="btn btn-outline-light btn-lg animate__animated">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/unshreif" class="btn btn-outline-light btn-lg animate__animated">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://linkedin.com/unshreif" class="btn btn-outline-light btn-lg animate__animated">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://telegram.org/unshreif" class="btn btn-outline-light btn-lg animate__animated">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                    <a href="https://github.com/unshreif" class="btn btn-outline-light btn-lg animate__animated">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:unshreif@gmail.com" class="btn btn-outline-light btn-lg animate__animated">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="mt-4">
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="collapse" data-bs-target="#contactSection">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+<script>
+    setTimeout(function () {
+        document.getElementById('loading').style.display = 'none';
+    }, 2000);
+</script>
+</body>
+</html>
