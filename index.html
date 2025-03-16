@@ -1,37 +1,130 @@
-<!doctype html >
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="icon" type="image/x-icon" href="./FV.png">
-    <title>connect</title>
+    <meta name="description" content="Connect with Muhmd Samy across all social media platforms">
+    <meta name="theme-color" content="#8B5CF6">
+    <link rel="icon" type="image/x-icon" href="./FV.png">
+    <link rel="apple-touch-icon" href="./FV.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <title>Muhmd Samy | Developer & Digital Creator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-<h1>Muhmd<b>Samy</b></h1>
-<div class="container">
-    <div class="card">
-        <img src="./FV.png" alt="Muhmd Samy">
-        <h2>Muhmd Samy</h2>
-        <p>Passionate Developer</p>
-        <br>
-        <div class="buttons">
-            <button id="FaceBook">Facebook</button> <br>
-            <button id="Instagram">instagram</button> <br>
-            <button id="X">X (Formerly Twitter)</button> <br>
-            <button id="Linkedin">Linkedin</button> <br>
-            <button id="github">GitHub</button> <br>
-            <button id="mail">Mail</button> <br>
-        </div>
-        <br>
+<body class="bg-gray-900 text-white">
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="container">
+                <a href="/" class="logo"><span class="text-purple">Muhmd</span>Samy</a>
+            </div>
+        </nav>
+
+
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Hi, I'm <span class="text-purple">Muhmd</span> Samy</h1>
+                    <p class="hero-subtitle">Front-End Developer & UI/UX Designer</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                        <a href="https://muhmdsamy.me" class="btn btn-secondary">visit website</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="./PP.jpg" alt="Muhmd Samy" class="profile-image">
+                </div>
+            </div>
+        </section>
+
+  
+        <section class="section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get in <span class="text-purple">Touch</span></h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Connect With Me</h3>
+                        <p>Feel free to reach out through any of these platforms:</p>
+                        <div class="social-links">
+                            <a id="FaceBook" class="social-button facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a id="Instagram" class="social-button instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a id="X" class="social-button twitter">
+                                <i class="fab fa-x-twitter"></i>
+                                <span>X (Twitter)</span>
+                            </a>
+                            <a id="Linkedin" class="social-button linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a id="telegram" class="social-button telegram">
+                                <i class="fab fa-telegram-plane"></i>
+                                <span>Telegram</span>
+                            </a>
+                            <a id="github" class="social-button github">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a id="mail" class="social-button email">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Send Me a Message</h3>
+                        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+                            <input type="hidden" name="access_key" value="5abe2aee-e5e8-4551-afe3-1eee60d66a5c">
+                            <input type="hidden" name="subject" value="New Contact Form Submission from Connect Page">
+                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                            </div>
+                            <div id="form-status" class="form-status" style="display: none;"></div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+ 
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo"><span class="text-purple">Muhmd</span>Samy</div>
+                    <p>&copy; 2024 Muhmd Samy. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
     </div>
-</div>
-<br>
-<footer>
-    <h2>MS</h2>
-    <p><span>&copy;</span> 2024 Muhmd Samy</p>
-</footer>
-<br>
-<script src="./index.js"></script>
+
+    <script src="./index.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js').then(registration => {
+                    console.log('ServiceWorker registration successful');
+                }).catch(error => {
+                    console.log('ServiceWorker registration failed:', error);
+                });
+            });
+        }
+    </script>
 </body>
 </html>
