@@ -11,31 +11,37 @@
       "src": "/(.*)",
       "dest": "/$1",
       "headers": {
-        "Content-Type": "text/html; charset=utf-8"
+        "Content-Type": "text/html; charset=utf-8",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "X-XSS-Protection": "1; mode=block"
       }
     },
     {
       "src": "/style.css",
       "headers": {
-        "Content-Type": "text/css"
+        "Content-Type": "text/css; charset=utf-8",
+        "Cache-Control": "public, max-age=31536000, immutable"
       }
     },
     {
       "src": "/index.js",
       "headers": {
-        "Content-Type": "application/javascript"
+        "Content-Type": "application/javascript; charset=utf-8",
+        "Cache-Control": "public, max-age=31536000, immutable"
       }
     },
     {
       "src": "/sw.js",
       "headers": {
-        "Content-Type": "application/javascript"
+        "Content-Type": "application/javascript; charset=utf-8",
+        "Cache-Control": "public, max-age=31536000, immutable"
       }
     },
     {
       "src": "/site.webmanifest",
       "headers": {
-        "Content-Type": "application/manifest+json"
+        "Content-Type": "application/manifest+json; charset=utf-8"
       }
     },
     {
