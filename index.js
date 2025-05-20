@@ -233,3 +233,58 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// Social media links configuration
+const socialLinks = {
+    facebook: 'https://facebook.com/unshreif',
+    instagram: 'https://instagram.com/unshreif',
+    twitter: 'https://twitter.com/unshreif',
+    linkedin: 'https://linkedin.com/in/unshreif',
+    telegram: 'https://t.me/unshreif',
+    github: 'https://github.com/unshreif',
+    email: 'mailto:unshreif@gmail.com',
+    website: 'https://muhmdsamy.me'
+};
+
+// Initialize links
+document.addEventListener('DOMContentLoaded', () => {
+    // Add click event listeners to all link cards
+    document.querySelectorAll('.link-card').forEach(card => {
+        card.addEventListener('click', (e) => {
+            const platform = card.classList[1]; // Get the platform class (facebook, instagram, etc.)
+            const url = socialLinks[platform];
+            
+            if (url) {
+                // Open in new tab for external links
+                if (platform !== 'email') {
+                    e.preventDefault();
+                    window.open(url, '_blank');
+                }
+            }
+        });
+    });
+
+    // Add hover effect for better interactivity
+    document.querySelectorAll('.link-card').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.transform = 'translateY(-2px)';
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'translateY(0)';
+        });
+    });
+});
+
+// Service Worker Registration
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+            .then(registration => {
+                console.log('ServiceWorker registration successful');
+            })
+            .catch(error => {
+                console.log('ServiceWorker registration failed:', error);
+            });
+    });
+}

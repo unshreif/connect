@@ -8,110 +8,50 @@
     <link rel="icon" type="image/x-icon" href="./FV.png">
     <link rel="apple-touch-icon" href="./FV.png">
     <link rel="manifest" href="./site.webmanifest">
-    <title>Muhmd Samy | Developer & Digital Creator</title>
+    <title>Muhmd Samy | Links</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-gray-900 text-white">
     <div class="app-container">
-        <nav class="navbar">
-            <div class="container">
-                <a href="/" class="logo"><span class="text-purple">Muhmd</span>Samy</a>
+        <main class="links-container">
+            <div class="profile-section">
+                <img src="./PP.jpg" alt="Muhmd Samy" class="profile-image">
+                <h1 class="profile-name"><span class="text-purple">Muhmd</span> Samy</h1>
+                <p class="profile-bio">Front-End Developer & UI/UX Designer</p>
             </div>
-        </nav>
 
-
-        <section class="hero" id="home">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-title">Hi, I'm <span class="text-purple">Muhmd</span> Samy</h1>
-                    <p class="hero-subtitle">Front-End Developer & UI/UX Designer</p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
-                        <a href="https://muhmdsamy.me" class="btn btn-secondary">visit website</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="./PP.jpg" alt="Muhmd Samy" class="profile-image">
-                </div>
+            <div class="links-grid">
+                <a href="https://muhmdsamy.me" class="link-card website" title="Visit Website">
+                    <i class="fa-solid fa-globe"></i>
+                </a>
+                <a href="https://facebook.com/unshreif" class="link-card facebook" title="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com/unshreif" class="link-card instagram" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/unshreif" class="link-card twitter" title="X (Twitter)">
+                    <i class="fa-brands fa-x"></i>
+                </a>
+                <a href="https://linkedin.com/in/unshreif" class="link-card linkedin" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://t.me/unshreif" class="link-card telegram" title="Telegram">
+                    <i class="fa-brands fa-telegram-plane"></i>
+                </a>
+                <a href="https://github.com/unshreif" class="link-card github" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:unshreif@gmail.com" class="link-card email" title="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
             </div>
-        </section>
 
-  
-        <section class="section" id="contact">
-            <div class="container">
-                <h2 class="section-title">Get in <span class="text-purple">Touch</span></h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3>Connect With Me</h3>
-                        <p>Feel free to reach out through any of these platforms:</p>
-                        <div class="social-links">
-                            <a id="FaceBook" class="social-button facebook">
-                                <i class="fab fa-facebook-f"></i>
-                                <span>Facebook</span>
-                            </a>
-                            <a id="Instagram" class="social-button instagram">
-                                <i class="fab fa-instagram"></i>
-                                <span>Instagram</span>
-                            </a>
-                            <a id="X" class="social-button twitter">
-                                <i class="fab fa-x-twitter"></i>
-                                <span>X (Twitter)</span>
-                            </a>
-                            <a id="Linkedin" class="social-button linkedin">
-                                <i class="fab fa-linkedin-in"></i>
-                                <span>LinkedIn</span>
-                            </a>
-                            <a id="telegram" class="social-button telegram">
-                                <i class="fab fa-telegram-plane"></i>
-                                <span>Telegram</span>
-                            </a>
-                            <a id="github" class="social-button github">
-                                <i class="fab fa-github"></i>
-                                <span>GitHub</span>
-                            </a>
-                            <a id="mail" class="social-button email">
-                                <i class="fas fa-envelope"></i>
-                                <span>Email</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="contact-form">
-                        <h3>Send Me a Message</h3>
-                        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
-                            <input type="hidden" name="access_key" value="5abe2aee-e5e8-4551-afe3-1eee60d66a5c">
-                            <input type="hidden" name="subject" value="New Contact Form Submission from Connect Page">
-                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
-                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" placeholder="Your name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Your email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" placeholder="Your message" required></textarea>
-                            </div>
-                            <div id="form-status" class="form-status" style="display: none;"></div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
- 
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer-logo"><span class="text-purple">Muhmd</span>Samy</div>
-                    <p>&copy; 2024 Muhmd Samy. All rights reserved.</p>
-                </div>
-            </div>
-        </footer>
+            <footer class="footer">
+                <p>&copy; 2024 Muhmd Samy. All rights reserved.</p>
+            </footer>
+        </main>
     </div>
 
     <script src="./index.js"></script>
