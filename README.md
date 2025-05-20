@@ -28,7 +28,7 @@ git clone https://github.com/unshreif/connect.git
 
 2. Navigate to the project directory:
 ```bash
-cd link-in-bio
+cd connect
 ```
 
 3. Open `index.html` in your browser or use a local server.
