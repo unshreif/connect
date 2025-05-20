@@ -23,7 +23,7 @@ A modern, responsive "Link in Bio" page built with HTML, CSS, and JavaScript. Th
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/link-in-bio.git
+git clone https://github.com/unshreif/link-in-bio.git
 ```
 
 2. Navigate to the project directory:
